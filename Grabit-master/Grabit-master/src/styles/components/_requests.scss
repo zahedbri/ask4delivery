@@ -1,0 +1,89 @@
+.request {
+  padding: 1rem;
+  font-size: 1.4rem;
+
+  &__heading {
+    color: var(--color-primary);
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &__info {
+    color: var(--text-light);
+    font-weight: 500;
+  }
+
+  &__address {
+    margin-top: 2rem;
+
+    &--icon {
+      vertical-align: top;
+    }
+
+    &--text {
+      display: inline-block;
+      margin-left: 1rem;
+      color: var(--text-light);
+    }
+  }
+
+  &__description {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__list {
+    padding-left: 2rem;
+  }
+
+  &__driver-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 1rem;
+
+    &--name,
+    &--phone {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f1f1f1;
+    padding: 1rem;
+
+    &__price {
+      font-size: 1.8rem;
+
+      &--right {
+        font-size: 1.8rem;
+        color: var(--color-primary);
+        text-align: right;
+      }
+    }
+
+    &__distance--right {
+      color: var(--text-light);
+    }
+  }
+}
+
+.empty-state {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__paragraph {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}

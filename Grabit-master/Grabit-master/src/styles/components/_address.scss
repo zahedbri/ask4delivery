@@ -1,0 +1,42 @@
+.address {
+  padding: 2rem;
+
+  &__heading {
+    color: #909090;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  &__banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e5e5e5;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+
+  &__pin {
+    vertical-align: top;
+    margin-right: 1.5rem;
+  }
+
+  &__name {
+    display: inline;
+    color: #909090;
+    font-weight: 400;
+  }
+
+  &__delete-button {
+    background: transparent;
+    border: none;
+
+    &:hover {
+      path {
+        fill: var(--color-primary);
+      }
+    }
+  }
+}

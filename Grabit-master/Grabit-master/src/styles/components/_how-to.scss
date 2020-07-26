@@ -1,0 +1,40 @@
+.how-to {
+  background: #fff;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+  &__title {
+    font-weight: 600;
+    font-size: 3.4rem;
+    line-height: 4.1rem;
+    color: #1b1b1b;
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+
+    @include for-size(phone) {
+      font-size: 2rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.6rem;
+    line-height: 3rem;
+
+    @include for-size(small-phone) {
+      font-size: 1.6rem;
+    }
+  }
+}

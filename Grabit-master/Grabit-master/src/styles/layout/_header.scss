@@ -1,0 +1,121 @@
+.header {
+  width: 100vw;
+  background-image: url('/img/background.png');
+  background-position: center;
+  background-size: cover;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @media only screen and (min-width: 900px) {
+    height: 90vh;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    @include for-size(small-phone) {
+      width: 10rem;
+    }
+  }
+
+  &__heading-wrapper {
+    margin: 8rem auto;
+    max-width: 850px;
+
+    @include for-size(laptop) {
+      margin: 5rem auto;
+    }
+  }
+
+  &__main-heading {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 73px;
+    text-align: center;
+    color: #ffffff;
+
+    @include for-size(laptop) {
+      font-size: 3rem;
+    }
+
+    @include for-size(small-phone) {
+      font-size: 2rem;
+      line-height: 40px;
+    }
+
+    &--italic {
+      font-style: italic;
+      font-weight: 600;
+    }
+  }
+
+  &__sign-up {
+    text-align: center;
+  }
+
+  &__sign-up-button {
+    width: 200px;
+    height: 90px;
+    padding-left: 1rem;
+    margin: 2rem;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.2rem;
+
+    &:hover {
+      background-color: rgba(256, 256, 256, 0.1);
+    }
+
+    &-arrow {
+      width: 15px;
+      height: 15px;
+      margin-left: 1rem;
+    }
+
+    &-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include for-size(laptop) {
+  .mainHeading {
+    font-size: 3rem;
+  }
+
+  .mainHeadingWrapper {
+    margin: 5rem auto;
+  }
+
+  .button-blue {
+    padding: 1rem;
+  }
+}
+
+@include for-size(small-phone) {
+  .mainHeading {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+
+  .button {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .logo {
+    width: 10rem;
+  }
+}

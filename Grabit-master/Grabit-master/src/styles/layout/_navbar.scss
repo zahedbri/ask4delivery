@@ -1,0 +1,51 @@
+.navbar {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0px 2px 4px rgba(219, 219, 219, 0.5);
+  transition: all 0.3s ease;
+
+  &__logo {
+    width: 200px;
+
+    @include for-size(tablet) {
+      width: 100px;
+    }
+
+    @include for-size(small-phone) {
+      width: 100px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__user-name {
+    margin-right: 1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #222a30;
+
+    @include for-size(tablet) {
+      display: none;
+    }
+  }
+
+  &__user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  &__user-letter {
+    width: 50px;
+    height: 50px;
+    border-radius: 300px;
+    font-size: 1.6rem;
+    border: 2px solid black;
+    padding: 1rem 1.2rem;
+  }
+}

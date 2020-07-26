@@ -1,0 +1,45 @@
+.profile {
+  padding: 4rem 2rem;
+
+  &__upload-button {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    & + label {
+      font-size: 1.2em;
+      padding: 1rem 1.5rem;
+      color: white;
+      background-color: #849fb1;
+      display: inline-block;
+      line-height: 15px;
+      cursor: pointer;
+      margin-right: 2rem;
+      border-radius: 4px;
+    }
+  }
+
+  &__avatar {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 1000px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    &--letter {
+      border: 3px solid black;
+      font-size: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__input-label {
+    color: #849fb1;
+    font-size: 1.4rem;
+  }
+}

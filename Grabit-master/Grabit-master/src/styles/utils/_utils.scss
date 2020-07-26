@@ -1,0 +1,30 @@
+.margin__bottom__mobile--small {
+  @include for-size(laptop) {
+    margin-bottom: 2rem;
+  }
+}
+
+.margin__bottom__mobile--medium {
+  @include for-size(laptop) {
+    margin-bottom: 4rem;
+  }
+}
+
+.margin__bottom__mobile--big {
+  @include for-size(laptop) {
+    margin-bottom: 6rem;
+  }
+}
+
+.small__icon {
+  width: 2.8rem;
+}
+
+.burger__menu {
+  display: none;
+
+  @include for-size(laptop) {
+    display: block;
+    cursor: pointer;
+  }
+}

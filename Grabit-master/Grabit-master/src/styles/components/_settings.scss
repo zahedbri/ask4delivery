@@ -1,0 +1,15 @@
+.settings {
+  background-color: white;
+  border-radius: 4px;
+
+  &__heading {
+    padding: 3rem 2rem;
+    border-bottom: 1px solid#DEDEDE;
+    color: #222a30;
+    font-size: 2.2rem;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,89 @@
+.request-form {
+  &__group {
+    &__label {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: rgb(19, 19, 19);
+      margin-bottom: 1rem;
+
+      &--icon {
+        vertical-align: top;
+        margin-right: 0.5rem;
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    &__textarea {
+      height: 8rem;
+    }
+
+    &__input {
+      font-size: 14px;
+    }
+  }
+
+  &__add-item {
+    padding: 0.5rem;
+    border: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+
+    &__input {
+      margin-right: 10rem;
+      display: inline-block;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      @include for-size(tablet-landscape) {
+        width: 8rem;
+      }
+
+      @include for-size(small-phone) {
+        width: 5rem;
+        font-size: 1rem;
+      }
+    }
+
+    &__button {
+      display: inline-block;
+      border: none;
+      background: transparent;
+      color: #849fb1;
+    }
+
+    &__icon {
+      margin-right: 1rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+
+    &__button {
+      padding: 0;
+      color: var(--color-primary);
+      background: transparent;
+      border: none;
+    }
+  }
+}
+
+.has-error {
+  border: 1px solid #ce4040;
+}
+
+.error-message {
+  color: #ce4040;
+  font-size: 1.2rem;
+  margin-top: 4px;
+}
